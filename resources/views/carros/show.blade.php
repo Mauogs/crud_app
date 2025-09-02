@@ -8,51 +8,51 @@
             <div class="card">
                 <div class="card-header">
                     <div class="float-start">
-                        Informação do Produto
+                        Informação do Carro
                     </div>
                     <div class="float-end">
-                        <a href="{{ route('products.index') }}" class="btn btn-primary btn-sm">&larr; Voltar</a>
+                        <a href="{{ route('carros.index') }}" class="btn btn-primary btn-sm">&larr; Voltar</a>
                     </div>
                 </div>
                 <div class="card-body">
 
                     <div class="row">
-                        <label for="code"
-                            class="col-md-4 col-form-label text-md-end text-start"><strong>Código:</strong></label>
+                        <label for="modelo"
+                            class="col-md-4 col-form-label text-md-end text-start"><strong>Modelo:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $product->code }}
+                            {{ $carro->modelo }}
                         </div>
                     </div>
 
                     <div class="row">
-                        <label for="name"
-                            class="col-md-4 col-form-label text-md-end text-start"><strong>Nome:</strong></label>
+                        <label for="marca"
+                            class="col-md-4 col-form-label text-md-end text-start"><strong>Marca:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $product->name }}
+                            {{ $carro->marca }}
                         </div>
                     </div>
 
                     <div class="row">
-                        <label for="quantity"
-                            class="col-md-4 col-form-label text-md-end text-start"><strong>Quantidade:</strong></label>
+                        <label for="ano"
+                            class="col-md-4 col-form-label text-md-end text-start"><strong>Ano:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $product->quantity }}
+                            {{ $carro->ano }}
                         </div>
                     </div>
 
                     <div class="row">
-                        <label for="price"
-                            class="col-md-4 col-form-label text-md-end text-start"><strong>Preço:</strong></label>
+                        <label for="datacad" class="col-md-4 col-form-label text-md-end text-start"><strong>Data de
+                                Cadastro:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $product->price }}
+                            {{ $carro->datacad }}
                         </div>
                     </div>
 
                     <div class="row">
-                        <label for="description"
-                            class="col-md-4 col-form-label text-md-end text-start"><strong>Descrição:</strong></label>
+                        <label for="foto"
+                            class="col-md-4 col-form-label text-md-end text-start"><strong>Foto:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $product->description }}
+                            {{ $carro->foto }}
                         </div>
                     </div>
 

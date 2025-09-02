@@ -36,7 +36,7 @@ class ProductController extends Controller
         Product::create($request->validated());
 
         return redirect()->route('products.index')
-            ->withSuccess('New product is added successfully.');
+            ->withSuccess('Novo produto adicionado com sucesso.');
     }
 
     /**
@@ -63,7 +63,7 @@ class ProductController extends Controller
         $product->update($request->validated());
 
         return redirect()->back()
-            ->withSuccess('Product is updated successfully.');
+            ->withSuccess('Produto atualizado com sucesso.');
     }
 
     /**
@@ -74,6 +74,6 @@ class ProductController extends Controller
         $product->delete();
 
         return redirect()->route('products.index')
-            ->withSuccess('Product is deleted successfully.');
+            ->withSuccess('Produto excluído com sucesso.');
     }
 }
